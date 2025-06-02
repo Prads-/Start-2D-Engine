@@ -1,0 +1,12 @@
+[Asset]
+Path: back.png
+[Clone]
+RotationAngle: 0
+FlipX: 0
+FlipY: 0
+AlphaBlend: 0
+X: 0
+Y: 0
+IsPrioritised: 0
+[/Clone]
+[/Asset]

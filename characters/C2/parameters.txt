@@ -1,0 +1,11 @@
+Name: C2
+Width: 40
+Height: 40
+MaxSpeed: 4.7
+CautionDistance: 22500.0
+ShootingSharpness: 0.07
+SharpTurn: 8.0
+MidTurn: 6.0
+SlowTurn: 5.5
+SpecialThrow: 0
+SecondaryAbility: 7

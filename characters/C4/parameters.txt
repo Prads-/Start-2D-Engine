@@ -1,0 +1,8 @@
+Name: C4
+Width: 40
+Height: 40
+MaxSpeed: 4.5
+CautionDistance: 22500
+ShootingSharpness: 0.087
+SpecialThrow: 0
+SecondaryAbility: 6

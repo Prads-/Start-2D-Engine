@@ -1,0 +1,90 @@
+[BB]
+MinX: 121
+MinY: 121
+MaxX: 439
+MaxY: 199
+[/BB]
+[BB]
+MinX: 361
+MinY: 121
+MaxX: 439
+MaxY: 359
+[/BB]
+[BB]
+MinX: 121
+MinY: 281
+MaxX: 239
+MaxY: 359
+[/BB]
+[BB]
+MinX: 521
+MinY: 121
+MaxX: 599
+MaxY: 359
+[/BB]
+[BB]
+MinX: 521
+MinY: 121
+MaxX: 759
+MaxY: 199
+[/BB]
+[BB]
+MinX: 841
+MinY: 121
+MaxX: 919
+MaxY: 199
+[/BB]
+[BB]
+MinX: 681
+MinY: 281
+MaxX: 759
+MaxY: 359
+[/BB]
+[BB]
+MinX: 841
+MinY: 281
+MaxX: 919
+MaxY: 359
+[/BB]
+[BB]
+MinX: 121
+MinY: 481
+MaxX: 239
+MaxY: 639
+[/BB]
+[BB]
+MinX: 361
+MinY: 481
+MaxX: 599
+MaxY: 639
+[/BB]
+[BB]
+MinX: 681
+MinY: 481
+MaxX: 919
+MaxY: 639
+[/BB]
+[BB]
+MinX: 0
+MinY: 0
+MaxX: 1024
+MaxY: 39
+[/BB]
+[BB]
+MinX: 0
+MinY: 0
+MaxX: 39
+MaxY: 768
+[/BB]
+[BB]
+MinX: 0
+MinY: 721
+MaxX: 1024
+MaxY: 768
+[/BB]
+[BB]
+MinX: 1001
+MinY: 0
+MaxX: 1024
+MaxY: 768
+[/BB]

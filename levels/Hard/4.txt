@@ -1,0 +1,467 @@
+Id: 3
+[PlayerPosition]
+X: 480
+Y: 520
+[/PlayerPosition]
+[GridOffset]
+X: 40
+Y: 40
+[/GridOffset]
+[Wave]
+[Pickup]
+Interval: 60
+Count: 9
+RespawnCount: 1
+X: 485
+Y: 123
+[PickupMoves]
+X: 5
+[/PickupMoves]
+[/Pickup]
+[Enemy]
+Id: 1
+X: 488
+Y: 360
+[/Enemy]
+[Enemy]
+Id: 5
+X: 103
+Y: 619
+[/Enemy]
+[Enemy]
+Id: 5
+X: 893
+Y: 658
+[/Enemy]
+[Enemy]
+Id: 5
+X: 901
+Y: 102
+[/Enemy]
+[Enemy]
+Id: 5
+X: 104
+Y: 52
+[/Enemy]
+[/Wave]
+[Wave]
+[Pickup]
+Interval: 600
+Count: 1
+RespawnCount: 1000
+X: 487
+Y: 358
+[PickupMoves]
+X: 6
+[/PickupMoves]
+[/Pickup]
+[Pickup]
+Interval: 600
+Count: 4
+RespawnCount: 1000
+X: 905
+Y: 162
+[PickupMoves]
+X: 5
+X: 9
+[/PickupMoves]
+[/Pickup]
+[Enemy]
+Id: 8
+X: 866
+Y: 598
+[/Enemy]
+[Enemy]
+Id: 13
+X: 856
+Y: 507
+[/Enemy]
+[Enemy]
+Id: 13
+X: 483
+Y: 392
+[/Enemy]
+[Enemy]
+Id: 11
+X: 681
+Y: 162
+[/Enemy]
+[Enemy]
+Id: 11
+X: 94
+Y: 615
+[/Enemy]
+[/Wave]
+[Wave]
+[Pickup]
+Interval: 60
+Count: 5
+RespawnCount: 1
+X: 167
+Y: 623
+[PickupMoves]
+X: 5
+[/PickupMoves]
+[/Pickup]
+[Pickup]
+Interval: 60
+Count: 1
+RespawnCount: 1
+X: 901
+Y: 204
+[PickupMoves]
+X: 3
+[/PickupMoves]
+[/Pickup]
+[Enemy]
+Id: 3
+X: 480
+Y: 289
+[/Enemy]
+[Enemy]
+Id: 3
+X: 102
+Y: 623
+[/Enemy]
+[Enemy]
+Id: 7
+X: 854
+Y: 635
+[/Enemy]
+[Enemy]
+Id: 7
+X: 906
+Y: 635
+[/Enemy]
+[Enemy]
+Id: 7
+X: 100
+Y: 550
+[/Enemy]
+[Enemy]
+Id: 12
+X: 479
+Y: 360
+[/Enemy]
+[/Wave]
+[Wave]
+[Pickup]
+Interval: 300
+Count: 1
+RespawnCount: 1
+X: 102
+Y: 520
+[PickupMoves]
+X: 5
+[/PickupMoves]
+[/Pickup]
+[Pickup]
+Interval: 60
+Count: 1
+RespawnCount: 1
+X: 103
+Y: 280
+[PickupMoves]
+X: 2
+[/PickupMoves]
+[/Pickup]
+[Pickup]
+Interval: 300
+Count: 1
+RespawnCount: 1000
+X: 488
+Y: 366
+[PickupMoves]
+X: 0
+X: 7
+[/PickupMoves]
+[/Pickup]
+[Enemy]
+Id: 11
+X: 426
+Y: 272
+[/Enemy]
+[Enemy]
+Id: 13
+X: 873
+Y: 515
+[/Enemy]
+[Enemy]
+Id: 0
+X: 455
+Y: 145
+[/Enemy]
+[Enemy]
+Id: 8
+X: 87
+Y: 93
+[/Enemy]
+[Enemy]
+Id: 2
+X: 877
+Y: 641
+[/Enemy]
+[Enemy]
+Id: 6
+X: 492
+Y: 669
+[/Enemy]
+[Enemy]
+Id: 6
+X: 899
+Y: 303
+[/Enemy]
+[Enemy]
+Id: 1
+X: 896
+Y: 102
+[/Enemy]
+[/Wave]
+[Wave]
+[Pickup]
+Interval: 900
+Count: 5
+RespawnCount: 1000
+X: 422
+Y: 367
+[PickupMoves]
+X: 5
+[/PickupMoves]
+[/Pickup]
+[Pickup]
+Interval: 60
+Count: 4
+RespawnCount: 1
+X: 900
+Y: 238
+[PickupMoves]
+X: 0
+[/PickupMoves]
+[/Pickup]
+[Enemy]
+Id: 8
+X: 478
+Y: 173
+[/Enemy]
+[Enemy]
+Id: 8
+X: 478
+Y: 331
+[/Enemy]
+[Enemy]
+Id: 8
+X: 478
+Y: 498
+[/Enemy]
+[Enemy]
+Id: 5
+X: 282
+Y: 130
+[/Enemy]
+[Enemy]
+Id: 5
+X: 105
+Y: 631
+[/Enemy]
+[Enemy]
+Id: 5
+X: 884
+Y: 659
+[/Enemy]
+[Enemy]
+Id: 5
+X: 702
+Y: 129
+[/Enemy]
+[Enemy]
+Id: 2
+X: 898
+Y: 187
+[/Enemy]
+[/Wave]
+[Wave]
+[Pickup]
+Interval: 60
+Count: 1
+RespawnCount: 1
+X: 853
+Y: 654
+[PickupMoves]
+X: 3
+[/PickupMoves]
+[/Pickup]
+[Pickup]
+Interval: 60
+Count: 5
+RespawnCount: 1
+X: 423
+Y: 366
+[PickupMoves]
+X: 5
+[/PickupMoves]
+[/Pickup]
+[Enemy]
+Id: 5
+X: 484
+Y: 118
+[/Enemy]
+[Enemy]
+Id: 5
+X: 486
+Y: 598
+[/Enemy]
+[Enemy]
+Id: 5
+X: 486
+Y: 520
+[/Enemy]
+[Enemy]
+Id: 5
+X: 486
+Y: 200
+[/Enemy]
+[Enemy]
+Id: 3
+X: 483
+Y: 357
+[/Enemy]
+[Enemy]
+Id: 12
+X: 892
+Y: 99
+[/Enemy]
+[Enemy]
+Id: 6
+X: 104
+Y: 620
+[/Enemy]
+[Enemy]
+Id: 6
+X: 156
+Y: 621
+[/Enemy]
+[/Wave]
+[Wave]
+[Pickup]
+Interval: 60
+Count: 5
+RespawnCount: 1
+X: 901
+Y: 202
+[PickupMoves]
+X: 2
+[/PickupMoves]
+[/Pickup]
+[Pickup]
+Interval: 60
+Count: 1
+RespawnCount: 1
+X: 685
+Y: 368
+[PickupMoves]
+X: 5
+[/PickupMoves]
+[/Pickup]
+[Enemy]
+Id: 8
+X: 670
+Y: 175
+[/Enemy]
+[Enemy]
+Id: 8
+X: 670
+Y: 501
+[/Enemy]
+[Enemy]
+Id: 8
+X: 272
+Y: 611
+[/Enemy]
+[Enemy]
+Id: 8
+X: 272
+Y: 501
+[/Enemy]
+[Enemy]
+Id: 8
+X: 272
+Y: 402
+[/Enemy]
+[Enemy]
+Id: 8
+X: 272
+Y: 301
+[/Enemy]
+[Enemy]
+Id: 8
+X: 272
+Y: 204
+[/Enemy]
+[Enemy]
+Id: 8
+X: 272
+Y: 108
+[/Enemy]
+[Enemy]
+Id: 13
+X: 895
+Y: 95
+[/Enemy]
+[Enemy]
+Id: 13
+X: 895
+Y: 300
+[/Enemy]
+[/Wave]
+[Wave]
+[Pickup]
+Interval: 60
+Count: 9
+RespawnCount: 1
+X: 858
+Y: 683
+[PickupMoves]
+X: 2
+[/PickupMoves]
+[/Pickup]
+[Enemy]
+Id: 10
+X: 462
+Y: 335
+[/Enemy]
+[Enemy]
+Id: 7
+X: 894
+Y: 294
+[/Enemy]
+[Enemy]
+Id: 7
+X: 896
+Y: 102
+[/Enemy]
+[Enemy]
+Id: 5
+X: 105
+Y: 546
+[/Enemy]
+[Enemy]
+Id: 5
+X: 181
+Y: 625
+[/Enemy]
+[Enemy]
+Id: 6
+X: 483
+Y: 149
+[/Enemy]
+[Enemy]
+Id: 6
+X: 487
+Y: 595
+[/Enemy]
+[Enemy]
+Id: 9
+X: 86
+Y: 125
+[/Enemy]
+[/Wave]

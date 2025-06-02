@@ -1,0 +1,9 @@
+#ifndef START_ENGINE_BUILD_H
+#define START_ENGINE_BUILD_H
+
+#define BUILD_FOR_WINDOWS
+//#define BUILD_FOR_UNIX
+
+#define WINDOWS_DEBUG_MODE
+
+#endif

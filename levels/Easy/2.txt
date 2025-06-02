@@ -1,0 +1,309 @@
+Id: 2
+[PlayerPosition]
+X: 480
+Y: 660
+[/PlayerPosition]
+[GridOffset]
+X: 40
+Y: 40
+[/GridOffset]
+[Wave]
+[Enemy]
+Id: 9
+X: 458
+Y: 383
+[/Enemy]
+[/Wave]
+[Wave]
+[Enemy]
+Id: 9
+X: 56
+Y: 63
+[/Enemy]
+[Enemy]
+Id: 9
+X: 455
+Y: 58
+[/Enemy]
+[Enemy]
+Id: 9
+X: 941
+Y: 67
+[/Enemy]
+[/Wave]
+[Wave]
+[Enemy]
+Id: 5
+X: 462
+Y: 401
+[/Enemy]
+[/Wave]
+[Wave]
+[Enemy]
+Id: 5
+X: 56
+Y: 57
+[/Enemy]
+[Enemy]
+Id: 5
+X: 947
+Y: 57
+[/Enemy]
+[/Wave]
+[Wave]
+[Enemy]
+Id: 5
+X: 66
+Y: 64
+[/Enemy]
+[Enemy]
+Id: 5
+X: 956
+Y: 59
+[/Enemy]
+[Enemy]
+Id: 9
+X: 376
+Y: 393
+[/Enemy]
+[Enemy]
+Id: 9
+X: 540
+Y: 397
+[/Enemy]
+[/Wave]
+[Wave]
+[Enemy]
+Id: 5
+X: 942
+Y: 407
+[/Enemy]
+[Enemy]
+Id: 9
+X: 536
+Y: 62
+[/Enemy]
+[Enemy]
+Id: 0
+X: 425
+Y: 644
+[/Enemy]
+[Enemy]
+Id: 6
+X: 789
+Y: 667
+[/Enemy]
+[Enemy]
+Id: 4
+X: 342
+Y: 67
+[/Enemy]
+[/Wave]
+[Wave]
+[Enemy]
+Id: 9
+X: 59
+Y: 62
+[/Enemy]
+[Enemy]
+Id: 9
+X: 940
+Y: 58
+[/Enemy]
+[Enemy]
+Id: 5
+X: 500
+Y: 671
+[/Enemy]
+[Enemy]
+Id: 4
+X: 470
+Y: 404
+[/Enemy]
+[Enemy]
+Id: 6
+X: 469
+Y: 63
+[/Enemy]
+[/Wave]
+[Wave]
+[Enemy]
+Id: 13
+X: 461
+Y: 215
+[/Enemy]
+[/Wave]
+[Wave]
+[Enemy]
+Id: 13
+X: 290
+Y: 668
+[/Enemy]
+[Enemy]
+Id: 13
+X: 615
+Y: 218
+[/Enemy]
+[Enemy]
+Id: 13
+X: 944
+Y: 54
+[/Enemy]
+[/Wave]
+[Wave]
+[Enemy]
+Id: 13
+X: 282
+Y: 668
+[/Enemy]
+[Enemy]
+Id: 13
+X: 781
+Y: 217
+[/Enemy]
+[Enemy]
+Id: 5
+X: 62
+Y: 405
+[/Enemy]
+[Enemy]
+Id: 9
+X: 777
+Y: 54
+[/Enemy]
+[/Wave]
+[Wave]
+[Pickup]
+Interval: 720
+Count: 3
+RespawnCount: 0
+X: 416
+Y: 416
+[PickupMoves]
+X: 5
+[/PickupMoves]
+[/Pickup]
+[Enemy]
+Id: 13
+X: 454
+Y: 55
+[/Enemy]
+[Enemy]
+Id: 13
+X: 48
+Y: 223
+[/Enemy]
+[Enemy]
+Id: 9
+X: 933
+Y: 56
+[/Enemy]
+[Enemy]
+Id: 5
+X: 61
+Y: 64
+[/Enemy]
+[Enemy]
+Id: 1
+X: 284
+Y: 669
+[/Enemy]
+[Enemy]
+Id: 6
+X: 949
+Y: 672
+[/Enemy]
+[/Wave]
+[Wave]
+[Enemy]
+Id: 7
+X: 62
+Y: 62
+[/Enemy]
+[Enemy]
+Id: 7
+X: 943
+Y: 59
+[/Enemy]
+[/Wave]
+[Wave]
+[Enemy]
+Id: 7
+X: 59
+Y: 62
+[/Enemy]
+[Enemy]
+Id: 7
+X: 940
+Y: 55
+[/Enemy]
+[Enemy]
+Id: 5
+X: 61
+Y: 671
+[/Enemy]
+[Enemy]
+Id: 9
+X: 935
+Y: 403
+[/Enemy]
+[Enemy]
+Id: 6
+X: 465
+Y: 406
+[/Enemy]
+[/Wave]
+[Wave]
+[Enemy]
+Id: 7
+X: 381
+Y: 60
+[/Enemy]
+[Enemy]
+Id: 7
+X: 538
+Y: 58
+[/Enemy]
+[Enemy]
+Id: 13
+X: 463
+Y: 57
+[/Enemy]
+[Enemy]
+Id: 5
+X: 70
+Y: 670
+[/Enemy]
+[Enemy]
+Id: 5
+X: 952
+Y: 673
+[/Enemy]
+[/Wave]
+[Wave]
+[Enemy]
+Id: 7
+X: 460
+Y: 59
+[/Enemy]
+[Enemy]
+Id: 9
+X: 64
+Y: 55
+[/Enemy]
+[Enemy]
+Id: 9
+X: 946
+Y: 57
+[/Enemy]
+[Enemy]
+Id: 1
+X: 624
+Y: 230
+[/Enemy]
+[Enemy]
+Id: 0
+X: 257
+Y: 382
+[/Enemy]
+[/Wave]

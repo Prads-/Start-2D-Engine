@@ -1,0 +1,108 @@
+[BB]
+MinX: 0
+MinY: 740
+MaxX: 1024
+MaxY: 768
+[/BB]
+[BB]
+MinX: 980
+MinY: 20
+MaxX: 1024
+MaxY: 740
+[/BB]
+[BB]
+MinX: 0
+MinY: 20
+MaxX: 20
+MaxY: 740
+[/BB]
+[BB]
+MinX: 0
+MinY: 0
+MaxX: 1024
+MaxY: 20
+[/BB]
+[BB]
+MinX: 100
+MinY: 100
+MaxX: 260
+MaxY: 180
+[/BB]
+[BB]
+MinX: 100
+MinY: 180
+MaxX: 180
+MaxY: 340
+[/BB]
+[BB]
+MinX: 300
+MinY: 300
+MaxX: 420
+MaxY: 340
+[/BB]
+[BB]
+MinX: 380
+MinY: 100
+MaxX: 660
+MaxY: 180
+[/BB]
+[BB]
+MinX: 380
+MinY: 180
+MaxX: 420
+MaxY: 300
+[/BB]
+[BB]
+MinX: 580
+MinY: 180
+MaxX: 660
+MaxY: 340
+[/BB]
+[BB]
+MinX: 780
+MinY: 100
+MaxX: 900
+MaxY: 220
+[/BB]
+[BB]
+MinX: 100
+MinY: 580
+MaxX: 180
+MaxY: 660
+[/BB]
+[BB]
+MinX: 100
+MinY: 420
+MaxX: 420
+MaxY: 460
+[/BB]
+[BB]
+MinX: 300
+MinY: 460
+MaxX: 420
+MaxY: 660
+[/BB]
+[BB]
+MinX: 580
+MinY: 420
+MaxX: 660
+MaxY: 580
+[/BB]
+[BB]
+MinX: 580
+MinY: 580
+MaxX: 780
+MaxY: 660
+[/BB]
+[BB]
+MinX: 780
+MinY: 340
+MaxX: 980
+MaxY: 420
+[/BB]
+[BB]
+MinX: 900
+MinY: 420
+MaxX: 980
+MaxY: 740
+[/BB]
