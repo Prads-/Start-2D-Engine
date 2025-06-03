@@ -15,10 +15,13 @@
 #include "JPS.h"
 #include "RayIntersection.h"
 #include "Network.h"
+#include "AudioCore.h"
 #include "Grid.h"
 #include "BoundingBox.h"
 #include "SAT_BoundingBox.h"
 #include "AStar.h"
+#include "FileLoader.h"
+#include "PrioritisedAsset.h"
 #include <functional>
 #include <mutex>
 
@@ -33,7 +36,9 @@ private:
 	PathFinderAStar pathFinderAStar;
 	Network *network;
 	int32 frameWidth, frameHeight;
+    AudioCore audio;
 	int gridOffsetX, gridOffsetY;
+	std::vector<AudioCore::AudioSource> audioSources;
 	std::function<void(int, int)> setCursorPositionCallback;
 	std::function<void(bool)> showCursorCallback;
 	int screenResolutionX, screenResolutionY;
@@ -41,6 +46,7 @@ private:
 
 	void commonInit(int32 frameWidth, int32 frameHeight, std::function<void(int, int)> setCursorPositionCallback, 
 		std::function<void(bool)> showCursorCallback);
+	void deleteSoundSources();
 
 public:
 #ifdef BUILD_FOR_UNIX
@@ -88,6 +94,7 @@ public:
 	void presentHUD();
 
 	void displayGraphics();
+	void createBackground(std::string path, std::vector<PrioritisedAsset> *prioritisedAssets, std::vector<Image*> *prioritisedImageCollector);
 
 	//Input
 	Input *getInputObject();
@@ -134,6 +141,27 @@ public:
 	sockaddr_in getClientAddress();
 	void clientEnableBroadcast();
 	void clientDisableBroadcast();
+
+	//Sound
+	void resetListener();
+
+	void startAudioStreaming(std::string path);
+	void stopAudioStreaming();
+	bool getIsAudioStreaming();
+	void setStreamGain(float gain);
+
+	void createSoundSources(int count);
+	void updateAllSoundSources();
+	bool createAudioBuffer(std::string path, AudioCore::AudioBuffer *bufferOut);
+	void playAudioBuffer(AudioCore::AudioBuffer *buffer, bool applyParameters = false);
+	void stopAudioBuffer(const AudioCore::AudioBuffer *buffer);
+	void flushAllSources();
+	void deleteAudioBuffer(AudioCore::AudioBuffer *buffer);
+	void setSourcePosition(uint32 sourceId, Vector2f position);
+	void loopSource(uint32 sourceId, bool loop);
+	void setSourcePitch(uint32 sourceId, float pitch);
+	void setSourceGain(uint32 sourceId, float gain);
+	void setSourcesGain(float gain);
 };
 
 #endif

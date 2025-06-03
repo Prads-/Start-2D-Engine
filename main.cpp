@@ -6,13 +6,16 @@
 #endif
 
 #include "StartEngine.h"
+#include "HardCodedLevel.h"
 #include "timer.h"
 #include <time.h>
 #include "MT_RandomGenerator.h"
+#include "ScreenManager.h"
 #include "FrameCountTimer.h"
+#include "SfxPool.h"
 #include "CrossPlatformSleep.h"
+#include "ConfigFile.h"
 #include <exception>
-#include "GraphRenderer.h"
 using namespace CrossPlatformSleep;
 
 #ifdef BUILD_FOR_UNIX
@@ -27,6 +30,10 @@ using namespace CrossPlatformSleep;
 #include <crtdbg.h>
 #endif
 #endif
+
+#include "CampaignGameManager.h"
+#include "ClientNetworkGameManager.h"
+#include "HostNetworkGameManager.h"
 
 StartEngine *engine;
 
@@ -230,6 +237,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	_CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );
 #endif
 	MT_RandomGenerator::seed(time(0));
+	ConfigFile::loadConfigFile();
 
 	WNDCLASSEX wC = {0};
 
@@ -247,13 +255,14 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		return 0;
 	}
 	
-	uint32 screenResolutionX = 1024, screenResolutionY = 768;
+	uint32 screenResolutionX, screenResolutionY;
+	ConfigFile::getScreenResolution(screenResolutionX, screenResolutionY);
 	
 	if (screenResolutionX == 0 && screenResolutionY == 0) {
 		screenResolutionX = GetSystemMetrics(SM_CXSCREEN);
 		screenResolutionY = GetSystemMetrics(SM_CYSCREEN);
 	}
-	HWND hwnd = CreateWindowEx(0, WND_CN, "Start 2D Engine", WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX, 
+	HWND hwnd = CreateWindowEx(0, WND_CN, "Start 2D Engine", WS_POPUP /*| WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX*/, 
 		0, 0, screenResolutionX, screenResolutionY, NULL, NULL, hInstance, NULL);
 
 	if (hwnd == NULL) {
@@ -275,12 +284,38 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	keys[INPUT_KEY_THROW_SPECIAL] = ' ';
 	keys[INPUT_KEY_CURSOR_TOGGLE] = 'C';
 	engine = 0;
+	ScreenManager *screenManager = 0;
 
 	try {
 		engine = new StartEngine(&hwnd, 1024, 768, keys, [](int x, int y) { setCursorPosition(x, y); }, [](bool show) { showCursor(show); },
 								screenResolutionX, screenResolutionY);
-		GraphRenderer graphRenderer(engine);
+		engine->createSoundSources(5);
+		SfxPool::initialise(engine);
 
+		Immobiliser::addAnimationFrame("Images/immobiliser1.png");
+		Immobiliser::addAnimationFrame("Images/immobiliser2.png");
+		Immobiliser::addAnimationFrame("Images/immobiliser3.png");
+		Immobiliser::addAnimationFrame("Images/immobiliser4.png");
+		Immobiliser::addAnimationFrame("Images/immobiliser5.png");
+
+		Explosion::getInstance(engine);
+
+		//Image pickupSprites[10], pickupNoRespawn, pickupCross;
+
+		/*pickupSprites[PICKUP_GRANADE].loadImage("Images/specialAttacks/explosive.png");
+		pickupSprites[PICKUP_HOMING].loadImage("Images/specialAttacks/homing.png");
+		pickupSprites[PICKUP_IMMOBILISER].loadImage("Images/specialAttacks/stun.png");
+		pickupSprites[PICKUP_PINBALL].loadImage("Images/specialAttacks/pinball.png");
+		pickupSprites[PICKUP_SHIELD].loadImage("Images/specialAttacks/shield.png");
+		pickupSprites[PICKUP_PIERCING_BALL].loadImage("Images/specialAttacks/piercingBall.png");
+		pickupSprites[PICKUP_BATTERY].loadImage("Images/specialAttacks/battery.png");
+		pickupSprites[PICKUP_INVISIBLE_BALL].loadImage("Images/specialAttacks/invisibleBall.png");
+		pickupSprites[PICKUP_TELEPORT_BALL].loadImage("Images/specialAttacks/teleport.png");
+		pickupSprites[PICKUP_CALL_BALL].loadImage("Images/specialAttacks/call.png");
+		pickupNoRespawn.loadImage("Images/specialAttacks/noRespawn.png");
+		pickupCross.loadImage("Images/specialAttacks/pickupItemCross.png");*/
+
+		screenManager = new ScreenManager(engine, quitGame);
 		while(TRUE) {
 			while (PeekMessage(&Msg, NULL, 0, 0, PM_REMOVE)) {
 				if (Msg.message == WM_QUIT) {
@@ -290,9 +325,10 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 				DispatchMessage(&Msg);
 			}
 			if (timer.checkTimer()) {
+				screenManager->renderScreen();
 				FrameCountTimer::incrementTotalFrames();
-				graphRenderer.Render();
 				engine->displayGraphics();
+				engine->updateAllSoundSources();
 			} else {
 				crossPlatformSleep(1);
 			}
@@ -303,7 +339,12 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		MessageBox(hwnd, errorMessage.c_str(), "Error", MB_ICONERROR);
 	}
 gameLoopEnd:
+	if (screenManager) {
+		delete screenManager;
+	}
 	if (engine) {
+		engine->flushAllSources();
+		SfxPool::cleanUp(engine);
 		delete engine;
 	}
 	return 0;

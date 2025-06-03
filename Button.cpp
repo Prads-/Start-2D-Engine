@@ -11,6 +11,8 @@ Button::Button(StartEngine *engine, Vector2i position, bool isAlphaBlended, std:
 	disableSprite = 0;
 	flipImageX = false;
 	flipImageY = false;
+	sfxMouseClick = 0;
+	sfxMouseOver = 0;
 	sfxMouseOverWasPlayed = false;
 	captionFont = 0;
 	captionVariableSizeFont = 0;
@@ -79,8 +81,16 @@ void Button::loadButtonSprite(std::string spritePath) {
 void Button::update(bool wasMouseLeftToggled) {
 	if (!isDisabled && engine->isCursorInsideBB(&bBox)) {
 		if (wasMouseLeftToggled) {
+			if (sfxMouseClick) {
+				engine->playAudioBuffer(sfxMouseClick);
+			}
 			clickedEvent();
+		} else if (sfxMouseOver && !sfxMouseOverWasPlayed) {
+			engine->playAudioBuffer(sfxMouseOver);
+			sfxMouseOverWasPlayed = true;
 		}
+	} else {
+		sfxMouseOverWasPlayed = false;
 	}
 
 }
@@ -99,7 +109,7 @@ void Button::draw() {
 	} else {
 		sprite = buttonSprite;
 	}
-	if (sprite) engine->draw(sprite, 0, flipImageX, flipImageY, isAlphaBlended, position.x, position.y);
+	engine->draw(sprite, 0, flipImageX, flipImageY, isAlphaBlended, position.x, position.y);
 	
 	if (caption.size() > 0) {
 		uint32 textColor;
@@ -144,6 +154,14 @@ void Button::setFlipY(bool flipY) {
 	this->flipImageY = flipY;
 }
 
+void Button::setSfxMouseOver(AudioCore::AudioBuffer *sfxMouseOver) {
+	this->sfxMouseOver = sfxMouseOver;
+}
+
+void Button::setSfxMouseClick(AudioCore::AudioBuffer *sfxMouseClick) {
+	this->sfxMouseClick = sfxMouseClick;
+}
+
 void Button::setCaption(std::string caption, int captionOffsetX, int captionOffsetY, const Image *font, const VariableSizeFont *variableSizeFont,
 						uint32 captionFontColorDefault, uint32 captionFontColorHighlight, uint32 captionFontColorDisabled) {
 	this->caption = caption;
@@ -154,10 +172,6 @@ void Button::setCaption(std::string caption, int captionOffsetX, int captionOffs
 	this->captionFontColorDefault = captionFontColorDefault;
 	this->captionFontColorHighlight = captionFontColorHighlight;
 	this->captionFontColorDisabled = captionFontColorDisabled;
-
-	if (font) {
-		setSize(captionOffsetX * 2 + 16 * caption.size(), captionOffsetY * 2 + 20);
-	}
 }
 
 void Button::setShowBorder(bool show) {

@@ -19,6 +19,84 @@
     <Filter Include="Source Files\Engine">
       <UniqueIdentifier>{01495b59-0eed-45df-836c-98de9c05df82}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Game">
+      <UniqueIdentifier>{378d5ec0-a947-4a3b-8d71-93b4c7b17061}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{32d980ef-3dc2-4916-9925-ea3b224841df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\FileLoader">
+      <UniqueIdentifier>{02034ba0-185b-4635-afcd-e755a0cbd32d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\FileLoader">
+      <UniqueIdentifier>{7e488bf0-4a9c-4e49-bfc5-c113ff0f33a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\GUI">
+      <UniqueIdentifier>{6822733d-5061-495e-8ce7-8bdad6665be0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Enemies">
+      <UniqueIdentifier>{6abf5cb8-b151-42b5-9d6e-08faa100b15d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Enemies\Sweeper">
+      <UniqueIdentifier>{23adda42-04d1-497e-af88-df33fe851169}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Enemies\Sentry">
+      <UniqueIdentifier>{764c730e-b14f-4bc3-a86f-94a517ab907f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Enemies\Guardian">
+      <UniqueIdentifier>{6fce4960-89fa-4b05-ada6-0d465220f4be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Enemies\Dragoon">
+      <UniqueIdentifier>{edb068bb-919e-4347-a417-8e3295ea2f31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Enemies\Minion1">
+      <UniqueIdentifier>{a9c2341b-3a2c-48b5-b7a0-9b691e69adac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Enemies\Minion2">
+      <UniqueIdentifier>{6c501a8a-8b6f-4674-ae49-6d430c326a74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Enemies\ProximityDrone">
+      <UniqueIdentifier>{64279cd1-9c0b-495c-bd75-d50dc33be992}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Enemies\Patroller">
+      <UniqueIdentifier>{228464ac-3a8f-470f-9997-bb87ba083255}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Enemies\MinionEgg">
+      <UniqueIdentifier>{c840988e-8195-40e9-9f97-adf91858eea2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\GUI">
+      <UniqueIdentifier>{4824f7e0-d8f0-4a49-a13f-acbca9341998}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Enemies">
+      <UniqueIdentifier>{bd4c75a8-d966-4688-bbad-790d8f2dbaba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Enemies\Sweeper">
+      <UniqueIdentifier>{7a5f3d52-897a-479d-84c2-379773c527c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Enemies\Sentry">
+      <UniqueIdentifier>{37efe5bc-3ca8-450d-909c-0a4ea1c0c69f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Enemies\Guardian">
+      <UniqueIdentifier>{9df683cd-54c6-44e3-81c6-7fc48d0c9bd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Enemies\Dragoon">
+      <UniqueIdentifier>{cddf1e2d-8d9f-4e02-aa91-bf90bc06c041}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Enemies\Minion1">
+      <UniqueIdentifier>{b592fa46-ec19-41ac-824c-29640d676014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Enemies\Minion2">
+      <UniqueIdentifier>{f318d771-7d57-47c3-a56e-801d26e79e86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Enemies\ProximityDrone">
+      <UniqueIdentifier>{5d909e7f-e053-4b6d-8a78-59f26459c2b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Enemies\Patroller">
+      <UniqueIdentifier>{86bff6a6-5028-4781-8db0-2b39920a0d4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Enemies\MinionEgg">
+      <UniqueIdentifier>{41b5d9e2-4b88-4453-801a-5d1d6f25f1dc}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files\Engine\Libs">
       <UniqueIdentifier>{dbee3eb2-de2f-494b-b916-74215e8d28dc}</UniqueIdentifier>
     </Filter>
@@ -27,6 +105,36 @@
     </Filter>
     <Filter Include="Header Files\Engine\Libs">
       <UniqueIdentifier>{42a1ad85-f99a-4248-b621-d3c27c4f9e39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Enemies\E02Rover">
+      <UniqueIdentifier>{1fcf5efe-10a5-4e37-ac85-3c3fb674e165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Enemies\E02Rover">
+      <UniqueIdentifier>{6eeca572-d96f-4b59-bfc8-269ad2d08557}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Enemies\MB01Golem">
+      <UniqueIdentifier>{861f660c-40b7-453c-ad64-86469fe0783b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Enemies\MB01Golem">
+      <UniqueIdentifier>{74a34a75-3293-475b-a8e2-855ffbb4cf3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Enemies\E01Sensor">
+      <UniqueIdentifier>{8fbdc997-e6f9-4fba-a4a1-43202473634b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Enemies\E01Sensor">
+      <UniqueIdentifier>{e64995f9-aefc-42f9-9506-a89a378c1306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Enemies\TheEye">
+      <UniqueIdentifier>{eda3c70b-2b17-43d7-a348-3735d00ccf61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Enemies\TheEye">
+      <UniqueIdentifier>{b259a722-44f2-43e5-9339-861ff26bdb6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Enemies\SpikeShip">
+      <UniqueIdentifier>{3afaba19-0d9c-4296-8054-2b1be1c400cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Enemies\SpikeShip">
+      <UniqueIdentifier>{3a85f38b-f3b6-4429-9bd9-64738896c2da}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Engine\GUI Component">
       <UniqueIdentifier>{bf6964ff-64cf-491b-b122-9980ffc633da}</UniqueIdentifier>
@@ -66,32 +174,305 @@
     <ClCompile Include="Animation.cpp">
       <Filter>Source Files\Engine</Filter>
     </ClCompile>
+    <ClCompile Include="HardCodedLevel.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
     <ClCompile Include="JPS.cpp">
       <Filter>Source Files\Engine</Filter>
     </ClCompile>
     <ClCompile Include="RayIntersection.cpp">
       <Filter>Source Files\Engine</Filter>
     </ClCompile>
+    <ClCompile Include="FileLoader.cpp">
+      <Filter>Source Files\Engine\FileLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="FileParser.cpp">
+      <Filter>Source Files\Engine\FileLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="Token.cpp">
+      <Filter>Source Files\Engine\FileLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="TokenInteger.cpp">
+      <Filter>Source Files\Engine\FileLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="TokenString.cpp">
+      <Filter>Source Files\Engine\FileLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="TokenKeyword.cpp">
+      <Filter>Source Files\Engine\FileLoader</Filter>
+    </ClCompile>
     <ClCompile Include="Network.cpp">
       <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkGameManager.cpp">
+      <Filter>Source Files\Game</Filter>
     </ClCompile>
     <ClCompile Include="MT_RandomGenerator.cpp">
       <Filter>Source Files\Engine</Filter>
     </ClCompile>
+    <ClCompile Include="Screen.cpp">
+      <Filter>Source Files\Game\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashScreen.cpp">
+      <Filter>Source Files\Game\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="MainScreen.cpp">
+      <Filter>Source Files\Game\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterSelection.cpp">
+      <Filter>Source Files\Game\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ArenaSelection.cpp">
+      <Filter>Source Files\Game\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="TokenBool.cpp">
+      <Filter>Source Files\Engine\FileLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="TokenFloat.cpp">
+      <Filter>Source Files\Engine\FileLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenManager.cpp">
+      <Filter>Source Files\Game\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioCore.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Sweeper.cpp">
+      <Filter>Source Files\Game\Enemies\Sweeper</Filter>
+    </ClCompile>
+    <ClCompile Include="SweeperFormation.cpp">
+      <Filter>Source Files\Game\Enemies\Sweeper</Filter>
+    </ClCompile>
+    <ClCompile Include="SweeperManager.cpp">
+      <Filter>Source Files\Game\Enemies\Sweeper</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Source Files\Game\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="SentryManager.cpp">
+      <Filter>Source Files\Game\Enemies\Sentry</Filter>
+    </ClCompile>
+    <ClCompile Include="Sentry.cpp">
+      <Filter>Source Files\Game\Enemies\Sentry</Filter>
+    </ClCompile>
+    <ClCompile Include="SentryProjectile.cpp">
+      <Filter>Source Files\Game\Enemies\Sentry</Filter>
+    </ClCompile>
+    <ClCompile Include="Guardian.cpp">
+      <Filter>Source Files\Game\Enemies\Guardian</Filter>
+    </ClCompile>
+    <ClCompile Include="GuardianManager.cpp">
+      <Filter>Source Files\Game\Enemies\Guardian</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFindingEnemy.cpp">
+      <Filter>Source Files\Game\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Dragoon.cpp">
+      <Filter>Source Files\Game\Enemies\Dragoon</Filter>
+    </ClCompile>
+    <ClCompile Include="DragoonManager.cpp">
+      <Filter>Source Files\Game\Enemies\Dragoon</Filter>
+    </ClCompile>
+    <ClCompile Include="DragoonProjectile.cpp">
+      <Filter>Source Files\Game\Enemies\Dragoon</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyProjectile.cpp">
+      <Filter>Source Files\Game\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyManager.cpp">
+      <Filter>Source Files\Game\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Minion1.cpp">
+      <Filter>Source Files\Game\Enemies\Minion1</Filter>
+    </ClCompile>
+    <ClCompile Include="Minion1Manager.cpp">
+      <Filter>Source Files\Game\Enemies\Minion1</Filter>
+    </ClCompile>
     <ClCompile Include="FrameCountTimer.cpp">
       <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Minion2.cpp">
+      <Filter>Source Files\Game\Enemies\Minion2</Filter>
+    </ClCompile>
+    <ClCompile Include="Minion2Manager.cpp">
+      <Filter>Source Files\Game\Enemies\Minion2</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteAnimation.cpp">
+      <Filter>Source Files\Game\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteImage.cpp">
+      <Filter>Source Files\Game\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="ProximityDrone.cpp">
+      <Filter>Source Files\Game\Enemies\ProximityDrone</Filter>
+    </ClCompile>
+    <ClCompile Include="ProximityDroneManager.cpp">
+      <Filter>Source Files\Game\Enemies\ProximityDrone</Filter>
     </ClCompile>
     <ClCompile Include="AStar.cpp">
       <Filter>Source Files\Engine</Filter>
     </ClCompile>
+    <ClCompile Include="Patroller.cpp">
+      <Filter>Source Files\Game\Enemies\Patroller</Filter>
+    </ClCompile>
+    <ClCompile Include="PatrollerManager.cpp">
+      <Filter>Source Files\Game\Enemies\Patroller</Filter>
+    </ClCompile>
+    <ClCompile Include="PatrollerProjectile.cpp">
+      <Filter>Source Files\Game\Enemies\Patroller</Filter>
+    </ClCompile>
+    <ClCompile Include="MinionEgg.cpp">
+      <Filter>Source Files\Game\Enemies\MinionEgg</Filter>
+    </ClCompile>
+    <ClCompile Include="MinionEggManager.cpp">
+      <Filter>Source Files\Game\Enemies\MinionEgg</Filter>
+    </ClCompile>
     <ClCompile Include="GuiComponent.cpp">
       <Filter>Source Files\Engine\GUI Component</Filter>
+    </ClCompile>
+    <ClCompile Include="CampaignScreen.cpp">
+      <Filter>Source Files\Game\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerObject.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="PickupItem.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="NonInteractiveObject.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchGameManager.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="InteractiveObject.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Immobiliser.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Explosion.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="DumbClientObject.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="DumbBallObject.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Competitor.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="CampaignPlayer.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="CampaignPickupItem.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="CampaignGameManager.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="BallObject.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Arena.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="AIObject.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="AbilityCoolDownValue.cpp">
+      <Filter>Source Files\Game</Filter>
     </ClCompile>
     <ClCompile Include="VirtualCursor.cpp">
       <Filter>Source Files\Engine</Filter>
     </ClCompile>
+    <ClCompile Include="RandomLevelGenerator.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
     <ClCompile Include="stringExtension.cpp">
       <Filter>Source Files\Engine\Libs</Filter>
+    </ClCompile>
+    <ClCompile Include="DifficultyScreen.cpp">
+      <Filter>Source Files\Game\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="SurvivalMode.cpp">
+      <Filter>Source Files\Game\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="SurvivalModeResult.cpp">
+      <Filter>Source Files\Game\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkPlayerObject.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkGameSimulator.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="HostNetworkGameManager.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientNetworkGameManager.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="DumbObject.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="HealthBar.cpp">
+      <Filter>Source Files\Game\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="HUD.cpp">
+      <Filter>Source Files\Game\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="E02Rover.cpp">
+      <Filter>Source Files\Game\Enemies\E02Rover</Filter>
+    </ClCompile>
+    <ClCompile Include="E02RoverManager.cpp">
+      <Filter>Source Files\Game\Enemies\E02Rover</Filter>
+    </ClCompile>
+    <ClCompile Include="MB01Golem.cpp">
+      <Filter>Source Files\Game\Enemies\MB01Golem</Filter>
+    </ClCompile>
+    <ClCompile Include="MB01GolemManager.cpp">
+      <Filter>Source Files\Game\Enemies\MB01Golem</Filter>
+    </ClCompile>
+    <ClCompile Include="MB01GolemShell.cpp">
+      <Filter>Source Files\Game\Enemies\MB01Golem</Filter>
+    </ClCompile>
+    <ClCompile Include="PatrolRover.cpp">
+      <Filter>Source Files\Game\Enemies\Patroller</Filter>
+    </ClCompile>
+    <ClCompile Include="MB01Sensor.cpp">
+      <Filter>Source Files\Game\Enemies\MB01Golem</Filter>
+    </ClCompile>
+    <ClCompile Include="E01Sensor.cpp">
+      <Filter>Source Files\Game\Enemies\E01Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="E01SensorManager.cpp">
+      <Filter>Source Files\Game\Enemies\E01Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="TheEye.cpp">
+      <Filter>Source Files\Game\Enemies\TheEye</Filter>
+    </ClCompile>
+    <ClCompile Include="TheEyeManager.cpp">
+      <Filter>Source Files\Game\Enemies\TheEye</Filter>
+    </ClCompile>
+    <ClCompile Include="TheEyeProjectile.cpp">
+      <Filter>Source Files\Game\Enemies\TheEye</Filter>
+    </ClCompile>
+    <ClCompile Include="SpikeShip.cpp">
+      <Filter>Source Files\Game\Enemies\SpikeShip</Filter>
+    </ClCompile>
+    <ClCompile Include="SpikeShipManager.cpp">
+      <Filter>Source Files\Game\Enemies\SpikeShip</Filter>
     </ClCompile>
     <ClCompile Include="Button.cpp">
       <Filter>Source Files\Engine\GUI Component</Filter>
@@ -102,17 +483,53 @@
     <ClCompile Include="Spinner.cpp">
       <Filter>Source Files\Engine\GUI Component</Filter>
     </ClCompile>
+    <ClCompile Include="SfxPool.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="CampaignDifficultySelection.cpp">
+      <Filter>Source Files\Game\GUI</Filter>
+    </ClCompile>
     <ClCompile Include="TextBox.cpp">
       <Filter>Source Files\Engine\GUI Component</Filter>
+    </ClCompile>
+    <ClCompile Include="ChapterSelection.cpp">
+      <Filter>Source Files\Game\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiplayerMode.cpp">
+      <Filter>Source Files\Game\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="HostGame.cpp">
+      <Filter>Source Files\Game\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="JoinGame.cpp">
+      <Filter>Source Files\Game\GUI</Filter>
     </ClCompile>
     <ClCompile Include="VariableSizeFont.cpp">
       <Filter>Source Files\Engine</Filter>
     </ClCompile>
+    <ClCompile Include="SingleCharacterSelection.cpp">
+      <Filter>Source Files\Game\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiplayerVictory.cpp">
+      <Filter>Source Files\Game\GUI</Filter>
+    </ClCompile>
     <ClCompile Include="CrossPlatformSleep.cpp">
       <Filter>Source Files\Engine</Filter>
     </ClCompile>
-    <ClCompile Include="GraphRenderer.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="ConfigFile.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultScreen.cpp">
+      <Filter>Source Files\Game\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CreditScreen.cpp">
+      <Filter>Source Files\Game\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="MusicManager.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Options.cpp">
+      <Filter>Source Files\Game\GUI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -152,6 +569,9 @@
     <ClInclude Include="Animation.h">
       <Filter>Header Files\Engine</Filter>
     </ClInclude>
+    <ClInclude Include="HardCodedLevel.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
     <ClInclude Include="NonInteractiveObject.h">
       <Filter>Header Files\Engine</Filter>
     </ClInclude>
@@ -167,29 +587,242 @@
     <ClInclude Include="RayIntersection.h">
       <Filter>Header Files\Engine</Filter>
     </ClInclude>
+    <ClInclude Include="FileLoader.h">
+      <Filter>Header Files\Engine\FileLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="FileParser.h">
+      <Filter>Header Files\Engine\FileLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="Token.h">
+      <Filter>Header Files\Engine\FileLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="Keywords.h">
+      <Filter>Header Files\Engine\FileLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="TokenKeyword.h">
+      <Filter>Header Files\Engine\FileLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="TokenInteger.h">
+      <Filter>Header Files\Engine\FileLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="TokenString.h">
+      <Filter>Header Files\Engine\FileLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="TokenBool.h">
+      <Filter>Header Files\Engine\FileLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="FileLoaderException.h">
+      <Filter>Header Files\Engine\FileLoader</Filter>
+    </ClInclude>
     <ClInclude Include="Network.h">
       <Filter>Header Files\Engine</Filter>
     </ClInclude>
     <ClInclude Include="DataPackets.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="NetworkGameManager.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
     <ClInclude Include="MT_RandomGenerator.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Screen.h">
+      <Filter>Header Files\Game\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="SplashScreen.h">
+      <Filter>Header Files\Game\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="MainScreen.h">
+      <Filter>Header Files\Game\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterSelection.h">
+      <Filter>Header Files\Game\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ArenaSelection.h">
+      <Filter>Header Files\Game\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="TokenFloat.h">
+      <Filter>Header Files\Engine\FileLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenManager.h">
+      <Filter>Header Files\Game\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioCore.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioCoreException.h">
       <Filter>Header Files\Engine</Filter>
     </ClInclude>
     <ClInclude Include="CustomException.h">
       <Filter>Header Files\Engine</Filter>
     </ClInclude>
+    <ClInclude Include="Sweeper.h">
+      <Filter>Header Files\Game\Enemies\Sweeper</Filter>
+    </ClInclude>
+    <ClInclude Include="SweeperFormation.h">
+      <Filter>Header Files\Game\Enemies\Sweeper</Filter>
+    </ClInclude>
+    <ClInclude Include="SweeperManager.h">
+      <Filter>Header Files\Game\Enemies\Sweeper</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Header Files\Game\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Sentry.h">
+      <Filter>Header Files\Game\Enemies\Sentry</Filter>
+    </ClInclude>
+    <ClInclude Include="SentryProjectile.h">
+      <Filter>Header Files\Game\Enemies\Sentry</Filter>
+    </ClInclude>
+    <ClInclude Include="SentryManager.h">
+      <Filter>Header Files\Game\Enemies\Sentry</Filter>
+    </ClInclude>
+    <ClInclude Include="Guardian.h">
+      <Filter>Header Files\Game\Enemies\Guardian</Filter>
+    </ClInclude>
+    <ClInclude Include="GuardianManager.h">
+      <Filter>Header Files\Game\Enemies\Guardian</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFindingEnemy.h">
+      <Filter>Header Files\Game\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Dragoon.h">
+      <Filter>Header Files\Game\Enemies\Dragoon</Filter>
+    </ClInclude>
+    <ClInclude Include="DragoonManager.h">
+      <Filter>Header Files\Game\Enemies\Dragoon</Filter>
+    </ClInclude>
+    <ClInclude Include="DragoonProjectile.h">
+      <Filter>Header Files\Game\Enemies\Dragoon</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyProjectile.h">
+      <Filter>Header Files\Game\Enemies</Filter>
+    </ClInclude>
     <ClInclude Include="SAT_BoundingBox.h">
       <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemiesId.h">
+      <Filter>Header Files\Game\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyManager.h">
+      <Filter>Header Files\Game\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Minion1Manager.h">
+      <Filter>Header Files\Game\Enemies\Minion1</Filter>
+    </ClInclude>
+    <ClInclude Include="Minion1.h">
+      <Filter>Header Files\Game\Enemies\Minion1</Filter>
     </ClInclude>
     <ClInclude Include="FrameCountTimer.h">
       <Filter>Header Files\Engine</Filter>
     </ClInclude>
+    <ClInclude Include="Minion2.h">
+      <Filter>Header Files\Game\Enemies\Minion2</Filter>
+    </ClInclude>
+    <ClInclude Include="Minion2Manager.h">
+      <Filter>Header Files\Game\Enemies\Minion2</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Header Files\Game\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteImage.h">
+      <Filter>Header Files\Game\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteAnimation.h">
+      <Filter>Header Files\Game\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="ProximityDrone.h">
+      <Filter>Header Files\Game\Enemies\ProximityDrone</Filter>
+    </ClInclude>
+    <ClInclude Include="ProximityDroneManager.h">
+      <Filter>Header Files\Game\Enemies\ProximityDrone</Filter>
+    </ClInclude>
     <ClInclude Include="AStar.h">
       <Filter>Header Files\Engine</Filter>
     </ClInclude>
+    <ClInclude Include="Patroller.h">
+      <Filter>Header Files\Game\Enemies\Patroller</Filter>
+    </ClInclude>
+    <ClInclude Include="PatrollerManager.h">
+      <Filter>Header Files\Game\Enemies\Patroller</Filter>
+    </ClInclude>
+    <ClInclude Include="PatrollerProjectile.h">
+      <Filter>Header Files\Game\Enemies\Patroller</Filter>
+    </ClInclude>
+    <ClInclude Include="MinionEgg.h">
+      <Filter>Header Files\Game\Enemies\MinionEgg</Filter>
+    </ClInclude>
+    <ClInclude Include="MinionEggManager.h">
+      <Filter>Header Files\Game\Enemies\MinionEgg</Filter>
+    </ClInclude>
     <ClInclude Include="GuiComponent.h">
       <Filter>Header Files\Engine\GUI Component</Filter>
+    </ClInclude>
+    <ClInclude Include="CampaignScreen.h">
+      <Filter>Header Files\Game\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="PrioritisedAsset.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerObject.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="PickupEnums.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="PickupItem.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchGameManager.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="InteractiveObject.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Immobiliser.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Explosion.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="DumbClientObject.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="DumbBallObject.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Competitor.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="CampaignPlayer.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="CampaignPickupItem.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="CampaignGameManager.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="BallObject.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Arena.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="AIObject.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="AbilityCoolDownValues.h">
+      <Filter>Header Files\Game</Filter>
     </ClInclude>
     <ClInclude Include="stbImage.h">
       <Filter>Header Files\Engine\Libs</Filter>
@@ -199,6 +832,90 @@
     </ClInclude>
     <ClInclude Include="VirtualCursor.h">
       <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomLevelGenerator.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="DifficultySelection.h">
+      <Filter>Header Files\Game\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyScore.h">
+      <Filter>Header Files\Game\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="SurvivalMode.h">
+      <Filter>Header Files\Game\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="SurvivalModeResult.h">
+      <Filter>Header Files\Game\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkPlayerObject.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkGameSimulator.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="HostNetworkGameManager.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientNetworkGameManager.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="AIDifficulty.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="DumbObject.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterVariables.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="HealthBar.h">
+      <Filter>Header Files\Game\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="HUD.h">
+      <Filter>Header Files\Game\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="PatrolRover.h">
+      <Filter>Header Files\Game\Enemies\Patroller</Filter>
+    </ClInclude>
+    <ClInclude Include="E02Rover.h">
+      <Filter>Header Files\Game\Enemies\E02Rover</Filter>
+    </ClInclude>
+    <ClInclude Include="E02RoverManager.h">
+      <Filter>Header Files\Game\Enemies\E02Rover</Filter>
+    </ClInclude>
+    <ClInclude Include="MB01Golem.h">
+      <Filter>Header Files\Game\Enemies\MB01Golem</Filter>
+    </ClInclude>
+    <ClInclude Include="MB01GolemManager.h">
+      <Filter>Header Files\Game\Enemies\MB01Golem</Filter>
+    </ClInclude>
+    <ClInclude Include="MB01GolemShell.h">
+      <Filter>Header Files\Game\Enemies\MB01Golem</Filter>
+    </ClInclude>
+    <ClInclude Include="MB01Sensor.h">
+      <Filter>Header Files\Game\Enemies\MB01Golem</Filter>
+    </ClInclude>
+    <ClInclude Include="E01Sensor.h">
+      <Filter>Header Files\Game\Enemies\E01Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="E01SensorManager.h">
+      <Filter>Header Files\Game\Enemies\E01Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="TheEye.h">
+      <Filter>Header Files\Game\Enemies\TheEye</Filter>
+    </ClInclude>
+    <ClInclude Include="TheEyeManager.h">
+      <Filter>Header Files\Game\Enemies\TheEye</Filter>
+    </ClInclude>
+    <ClInclude Include="TheEyeProjectile.h">
+      <Filter>Header Files\Game\Enemies\TheEye</Filter>
+    </ClInclude>
+    <ClInclude Include="SpikeShip.h">
+      <Filter>Header Files\Game\Enemies\SpikeShip</Filter>
+    </ClInclude>
+    <ClInclude Include="SpikeShipManager.h">
+      <Filter>Header Files\Game\Enemies\SpikeShip</Filter>
     </ClInclude>
     <ClInclude Include="CheckBox.h">
       <Filter>Header Files\Engine\GUI Component</Filter>
@@ -212,14 +929,50 @@
     <ClInclude Include="TextBox.h">
       <Filter>Header Files\Engine\GUI Component</Filter>
     </ClInclude>
+    <ClInclude Include="SfxPool.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="CampaignDifficultySelection.h">
+      <Filter>Header Files\Game\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ChapterSelection.h">
+      <Filter>Header Files\Game\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiplayerMode.h">
+      <Filter>Header Files\Game\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="HostGame.h">
+      <Filter>Header Files\Game\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="JoinGame.h">
+      <Filter>Header Files\Game\GUI</Filter>
+    </ClInclude>
     <ClInclude Include="VariableSizeFont.h">
       <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleCharacterSelection.h">
+      <Filter>Header Files\Game\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiplayerVictory.h">
+      <Filter>Header Files\Game\GUI</Filter>
     </ClInclude>
     <ClInclude Include="CrossPlatformSleep.h">
       <Filter>Header Files\Engine</Filter>
     </ClInclude>
-    <ClInclude Include="GraphRenderer.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="ConfigFile.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultScreen.h">
+      <Filter>Header Files\Game\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CreditScreen.h">
+      <Filter>Header Files\Game\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="MusicManager.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Options.h">
+      <Filter>Header Files\Game\GUI</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

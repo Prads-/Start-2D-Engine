@@ -42,16 +42,13 @@ std::string StringExtension::intToStr(int integer) {
 }
 
 bool StringExtension::getLineFromFile(ifstream *file, string *lineOut) {
-	if (getline(*file, *lineOut)) {
-		if (lineOut->size() != 0) {
-			if (lineOut->at(lineOut->size() - 1) == '\r') {
-				lineOut->resize(lineOut->size() - 1);
-			}
+	bool retVal = getline(*file, *lineOut);
+	if (retVal && lineOut->size() != 0) {
+		if (lineOut->at(lineOut->size() - 1) == '\r') {
+			lineOut->resize(lineOut->size() - 1);
 		}
-	} else {
-		return false;
 	}
-	return true;
+	return retVal;
 }
 
 int StringExtension::strToInt(std::string str) {

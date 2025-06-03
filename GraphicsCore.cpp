@@ -1,6 +1,7 @@
 #include "GraphicsCore.h"
 #include <cmath>
 #include <cstring>
+#include "ConfigFile.h"
 
 #ifdef BUILD_FOR_UNIX
 GraphicsCore::GraphicsCore(int32 frameWidth, int32 frameHeight, int screenResolutionX, int screenResolutionY) {
@@ -134,9 +135,9 @@ bool GraphicsCore::initializeDirectX(HWND *hwnd, int screenResolutionX, int scre
 	d3dInfo.BackBufferWidth = screenResolutionX;
 	d3dInfo.FullScreen_RefreshRateInHz = D3DPRESENT_RATE_DEFAULT;
 	d3dInfo.hDeviceWindow = *hwnd;
-	d3dInfo.PresentationInterval = D3DPRESENT_INTERVAL_IMMEDIATE;
+	d3dInfo.PresentationInterval = (ConfigFile::getVSync()) ? D3DPRESENT_INTERVAL_DEFAULT : D3DPRESENT_INTERVAL_IMMEDIATE;
 	d3dInfo.SwapEffect = D3DSWAPEFFECT_DISCARD;
-	d3dInfo.Windowed = TRUE;
+	d3dInfo.Windowed = FALSE;
 
 	if (d3d->CreateDevice(D3DADAPTER_DEFAULT, D3DDEVTYPE_HAL, *hwnd, vP, &d3dInfo, &d3dDevice) != 0) {
 		d3d->Release();
@@ -178,7 +179,9 @@ bool GraphicsCore::initializeDirectX(HWND *hwnd, int screenResolutionX, int scre
 		return false;
 	}
 
-	maintainAspectRatio(screenResolutionX, screenResolutionY);
+	if (ConfigFile::getMaintainAspectRatio()) {
+		maintainAspectRatio(screenResolutionX, screenResolutionY);
+	}
 	halfResolutionX = screenResolutionX / 2;
 	halfResolutionY = screenResolutionY / 2;
 	createScreenPlane();

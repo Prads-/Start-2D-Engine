@@ -2,8 +2,10 @@
 #include "Collision.h"
 #include <cmath>
 #include "DynamicMultidimensionalArray.h"
+#include "ConfigFile.h"
 using namespace DynamicMultidimensionalArray;
 using namespace std;
+using namespace FileLoader;
 
 #ifdef BUILD_FOR_UNIX
 StartEngine::StartEngine(int32 frameWidth, int32 frameHeight, int32 *keys, std::function<void(int, int)> setCursorPositionCallback, std::function<void(bool)> showCursorCallback, int screenResolutionX, int screenResolutionY)
@@ -27,6 +29,8 @@ StartEngine::StartEngine(HWND *hwnd, int32 frameWidth, int32 frameHeight, int32 
 
 StartEngine::~StartEngine() {
 	closeNetwork();
+	flushAllSources();
+	deleteSoundSources();
 }
 
 void StartEngine::commonInit(int32 frameWidth, int32 frameHeight, std::function<void(int, int)> setCursorPositionCallback, 
@@ -45,7 +49,9 @@ void StartEngine::commonInit(int32 frameWidth, int32 frameHeight, std::function<
 	this->showCursorCallback = showCursorCallback;
 
 	int drawSpaceResolutionX = screenResolutionX, drawSpaceResolutionY = screenResolutionY;
-	gfx.maintainAspectRatio(drawSpaceResolutionX, drawSpaceResolutionY);
+	if (ConfigFile::getMaintainAspectRatio()) {
+		gfx.maintainAspectRatio(drawSpaceResolutionX, drawSpaceResolutionY);
+	}
 	BoundingBox drawSpaceBBox;
 	drawSpaceBBox.minP = Vector2f((screenResolutionX - drawSpaceResolutionX)  / 2.0f, (screenResolutionY - drawSpaceResolutionY) / 2.0f);
 	drawSpaceBBox.maxP = Vector2f(drawSpaceResolutionX + (screenResolutionX - drawSpaceResolutionX)  / 2.0f, drawSpaceResolutionY + (screenResolutionY - drawSpaceResolutionY) / 2.0f);
@@ -155,6 +161,30 @@ void StartEngine::presentHUD() {
 
 void StartEngine::displayGraphics() {
 	gfx.render();
+}
+
+void StartEngine::createBackground(std::string path, std::vector<PrioritisedAsset> *prioritisedAssets, std::vector<Image*> *prioritisedImageCollector) {
+	gfx.clearBackgroundBuffer(0);
+
+	vector<LevelAsset> levelAssets;
+	loadLevelAssetsFile("maps/" + path + "/staticAssets.txt", &levelAssets);
+	for (const FileLoader::LevelAsset &levelAsset : levelAssets) {
+		Image *image = new Image("maps/" + path + "/" + levelAsset.path);
+		bool hasPrioritisedClone = false;
+		for (const FileLoader::LevelAsset::Clone &clone : levelAsset.clones) {
+			if (clone.isPrioritised) {
+				prioritisedAssets->push_back(PrioritisedAsset(image, clone, BoundingBox(Vector2f(clone.x, clone.y), Vector2f(clone.x + image->getWidth(), clone.y + image->getHeight()))));
+				hasPrioritisedClone = true;
+			} else {
+				gfx.drawBackground(image, clone.rotationAngle, clone.flipX, clone.flipY, clone.alphaBlend, clone.x, clone.y);
+			}
+		}
+		if (!hasPrioritisedClone) {
+			delete image;
+		} else {
+			prioritisedImageCollector->push_back(image);
+		}
+	}
 }
 
 Input *StartEngine::getInputObject() {
@@ -394,4 +424,120 @@ void StartEngine::clientDisableBroadcast() {
 		((ClientNetwork*)network)->clientDisableBroadcast();
 	}
 	networkMutex.unlock();
+}
+
+void StartEngine::resetListener() {
+    audio.resetListener();
+}
+
+void StartEngine::startAudioStreaming(std::string path) {
+    audio.startStreaming(path);
+}
+
+void StartEngine::stopAudioStreaming() {
+    audio.stopStreaming();
+}
+
+bool StartEngine::getIsAudioStreaming() {
+    return audio.getIsStreaming();
+}
+
+void StartEngine::setStreamGain(float gain) {
+	audio.setStreamGain(gain);
+}
+
+void StartEngine::createSoundSources(int count) {
+    for (int i = 0; i < count; ++i) {
+    	AudioCore::AudioSource audioSource;
+    	audio.getSource(&audioSource);
+    	audioSources.push_back(audioSource);
+    }
+}
+
+void StartEngine::updateAllSoundSources() {
+    for (AudioCore::AudioSource &source : audioSources) {
+    	if (source.isPlaying) {
+    		audio.updateSourcePlayingStatus(&source);
+    	}
+    }
+}
+
+void StartEngine::deleteSoundSources() {
+    for (AudioCore::AudioSource &audioSource : audioSources) {
+    	audio.deleteSource(&audioSource);
+    }
+    audioSources.clear();
+}
+
+bool StartEngine::createAudioBuffer(std::string path, AudioCore::AudioBuffer *bufferOut) {
+    return audio.createAudioBuffer(path, bufferOut);
+}
+
+void StartEngine::playAudioBuffer(AudioCore::AudioBuffer *buffer, bool applyParameters) {
+    for (size_t i = 0; i < audioSources.size(); ++i) {
+    	if (!audioSources[i].isPlaying) {
+    		if (audioSources[i].attachedBuffer != buffer->buffer) {
+    			audio.bindBufferToSource(&audioSources[i], buffer);
+    		}
+    		buffer->lastBoundSourceId = i;
+    		if (applyParameters) {
+    			audio.loopSource(&audioSources[i], buffer->loop);
+    			audio.setSourceGain(&audioSources[i], buffer->gain);
+    			audio.setSourcePitch(&audioSources[i], buffer->pitch);
+    		}
+    		audio.playSource(&audioSources[i]);
+    		break;
+    	}
+    }
+}
+
+void StartEngine::stopAudioBuffer(const AudioCore::AudioBuffer *buffer) {
+    if (buffer->lastBoundSourceId < audioSources.size()) {
+    	if (audioSources[buffer->lastBoundSourceId].isPlaying && audioSources[buffer->lastBoundSourceId].attachedBuffer == buffer->buffer) {
+    		audio.stopSource(&audioSources[buffer->lastBoundSourceId]);
+    	}
+    }
+}
+
+void StartEngine::flushAllSources() {
+    for (AudioCore::AudioSource &source : audioSources) {
+    	if (source.isPlaying) {
+    		audio.stopSource(&source);
+    	}
+    	audio.bindBufferToSource(&source, (ALuint)0);
+    }
+}
+
+void StartEngine::deleteAudioBuffer(AudioCore::AudioBuffer *buffer) {
+    audio.deleteAudioBuffer(buffer);
+}
+
+void StartEngine::setSourcePosition(uint32 sourceId, Vector2f position) {
+    if (sourceId < audioSources.size()) {
+    	audio.setSourcePosition(&audioSources[sourceId], position);
+    }
+}
+
+void StartEngine::loopSource(uint32 sourceId, bool loop) {
+    if (sourceId < audioSources.size()) {
+    	audio.loopSource(&audioSources[sourceId], loop);
+    }
+}
+
+void StartEngine::setSourcePitch(uint32 sourceId, float pitch) {
+    if (sourceId < audioSources.size()) {
+    	audio.setSourcePitch(&audioSources[sourceId], pitch);
+    }
+}
+
+void StartEngine::setSourceGain(uint32 sourceId, float gain) {
+    if (sourceId < audioSources.size()) {
+    	audio.setSourceGain(&audioSources[sourceId], gain);
+    }
+}
+
+void StartEngine::setSourcesGain(float gain) {
+	for (AudioCore::AudioSource &source : audioSources) {
+		audio.setSourceGain(&source, gain);
+	}
 }

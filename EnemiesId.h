@@ -1,0 +1,21 @@
+#ifndef ENEMIES_ID_H
+#define ENEMIES_ID_H
+
+#define ENEMY_ID_SWEEPER			0
+#define ENEMY_ID_SENTRY				1
+#define ENEMY_ID_GUARDIAN			2
+#define ENEMY_ID_DRAGOON			3
+#define ENEMY_ID_MINION1			4
+#define ENEMY_ID_MINION2			5
+#define ENEMY_ID_PROXIMITY_DRONE	6
+#define ENEMY_ID_PATROLLER			7
+#define ENEMY_ID_MINION_EGG			8
+#define ENEMY_ID_E02ROVER			9
+#define ENEMY_ID_MB01GOLEM			10
+#define ENEMY_ID_E01SENSOR			11
+#define ENEMY_ID_THE_EYE			12
+#define ENEMY_ID_SPIKE_SHIP			13
+
+#define NUMBER_OF_ENEMIES			14
+
+#endif

@@ -13,6 +13,7 @@ private:
 	std::function<void()> clickedEvent;
 	bool wasButtonSpriteLoaded, wasOnMouseOverSpriteLoaded;
 	bool isDisabled, flipImageX, flipImageY, sfxMouseOverWasPlayed, showBorder;
+	AudioCore::AudioBuffer *sfxMouseOver, *sfxMouseClick;
 	std::string caption;
 	int captionOffsetX, captionOffsetY;
 	const Image *captionFont;
@@ -40,6 +41,9 @@ public:
 
 	void setFlipX(bool flipX);
 	void setFlipY(bool flipY);
+
+	void setSfxMouseOver(AudioCore::AudioBuffer *sfxMouseOver);
+	void setSfxMouseClick(AudioCore::AudioBuffer *sfxMouseClick);
 
 	void setCaption(std::string caption, int captionOffsetX, int captionOffsetY, const Image *font, const VariableSizeFont *variableSizeFont,
 		uint32 captionFontColorDefault, uint32 captionFontColorHighlight, uint32 captionFontColorDisabled = 0);
